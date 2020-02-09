@@ -1,0 +1,112 @@
+html,
+body {
+  padding: 0;
+  margin: 0;
+}
+
+html {
+  background-color: #270237;
+  /* background-image: url(/img/stars.svg), url(/img/asteriod2.svg),
+    url(/img/asteriod1.svg), url(/img/bg.svg); */
+  background-image: url(/img/stars.svg), url(/img/bg.svg);
+  /* linear-gradient(to bottom, #270237, #1b3454, #2d4a69, #3f607f, #537895); */
+  background-repeat: repeat, no-repeat;
+  background-size: auto, cover;
+  background-position: bottom, bottom;
+  min-height: 100%;
+}
+
+body {
+  position: relative;
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+  font-family: 'Ubuntu Mono', Menlo, Consolas, Monaco, Liberation Mono,
+    Lucida Console, monospace;
+  font-size: 24px;
+
+  /* background: #212121; */
+  color: #dfdfdf;
+
+  &:before {
+    content: '';
+    position: absolute;
+    left: -150px;
+    width: 100px;
+    height: 200px;
+    background-image: url(/img/asteriod2.svg);
+    background-repeat: no-repeat;
+    background-size: 100px;
+  }
+
+  &:after {
+    content: '';
+    position: absolute;
+    right: -150px;
+    width: 100px;
+    height: 200px;
+    top: 200px;
+    background-image: url(/img/asteriod1.svg);
+    background-repeat: no-repeat;
+    background-size: 100px;
+  }
+}
+
+h1 {
+  font-size: 36px;
+}
+
+h2 {
+  font-size: 28px;
+  margin-top: 40px;
+}
+
+strong {
+  color: white;
+}
+
+a {
+  color: #f47d20;
+}
+
+.more {
+  font-size: 80%;
+}
+
+.is-hazard .hazard {
+  color: red;
+  font-weight: bold;
+  animation: hazard 1s infinite;
+  padding: 2px 4px;
+}
+
+hr,
+.no-hazard,
+.is-hazard {
+  border: 0;
+  border-bottom: 4px solid #b077c8;
+}
+
+@keyframes hazard {
+  0% {
+    color: red;
+    background: inherit;
+  }
+
+  50% {
+    color: inherit;
+    background: red;
+  }
+
+  51% {
+    color: red;
+    background: inherit;
+  }
+}
+
+a,
+b {
+  & c {
+    color: blue;
+  }
+}
