@@ -13,8 +13,8 @@
   },
   "plugins": ["react"],
   "rules": {
-    "semi": "error",
     "no-console": 0,
-    "react/jsx-uses-vars": [2]
+    "react/jsx-uses-vars": [2],
+    "react/jsx-no-undef": "error"
   }
 }

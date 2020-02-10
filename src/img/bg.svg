@@ -1,1 +1,9 @@
-<svg width="1401" height="834" xmlns="http://www.w3.org/2000/svg"><path d="M1401 531.573V834H857.706C583.956 797.58 419.7 672.905 545.694 435.178 737.124 73.924 93.418 737.418.528 834H0V466.204c108.229-82.072 1012.589-759.26 810.3-316.27-232.371 508.931 448.023 596.237 590.7 381.639z" fill="#38194B" fill-rule="evenodd"/></svg>
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="1401px" height="834px" viewBox="0 0 1401 834" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 52.6 (67491) - http://www.bohemiancoding.com/sketch -->
+    <title>bg</title>
+    <desc>Created with Sketch.</desc>
+    <g id="bg" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <path d="M1401,531.572633 L1401,834 L857.706382,834 C583.955425,797.579985 419.699835,672.90544 545.693684,435.177542 C737.123222,73.9238225 93.4176477,737.418588 0.527551708,834 L0,834 L0,466.204345 C108.228648,384.13226 1012.58884,-293.056371 810.3,149.934626 C577.928544,658.865226 1258.32266,746.170691 1401,531.572633 Z" id="Path" fill="#38194B"></path>
+    </g>
+</svg>

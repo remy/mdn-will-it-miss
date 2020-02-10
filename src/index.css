@@ -103,10 +103,3 @@ hr,
     background: inherit;
   }
 }
-
-a,
-b {
-  & c {
-    color: blue;
-  }
-}
