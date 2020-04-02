@@ -3,7 +3,7 @@
     "es6": true,
     "browser": true
   },
-  "extends": "eslint:recommended",
+  "extends": ["eslint:recommended", "plugin:react/recommended"],
   "parserOptions": {
     "ecmaVersion": 9,
     "sourceType": "module",

@@ -1,3 +1,4 @@
+import React from 'react';
 import formatNumber from 'format-number';
 import format from 'date-fns/format';
 

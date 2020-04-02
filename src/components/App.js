@@ -1,5 +1,7 @@
+import React from 'react';
 import { useAsync } from 'react-async-hook';
 import addDays from 'date-fns/addDays';
+import format from 'date-fns/format';
 import Orbital from './Orbital';
 
 function getDate(d = new Date()) {
@@ -9,7 +11,7 @@ function getDate(d = new Date()) {
 const fetchData = () =>
   fetch(
     `https://api.nasa.gov/neo/rest/v1/feed?start_date=${getDate()}&api_key=DEMO_KEY`
-  ).then(res => res.json());
+  ).then((res) => res.json());
 
 export default function App() {
   const data = useAsync(fetchData, []);
@@ -39,12 +41,13 @@ export default function App() {
   return (
     <div>
       <p>
-        Tomorrow there will be <strong>{results.length}</strong> near misses
+        {format(addDays(new Date(), 1), 'EEEE d-MMM')} there will be{' '}
+        <strong>{results.length}</strong> near misses
       </p>
       <hr></hr>
       {results
-        .sort(a => (a.is_potentially_hazardous_asteroid ? -1 : 1))
-        .map(data => (
+        .sort((a) => (a.is_potentially_hazardous_asteroid ? -1 : 1))
+        .map((data) => (
           <Orbital key={data.id} {...data} />
         ))}
     </div>
