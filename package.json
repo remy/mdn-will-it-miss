@@ -1,7 +1,7 @@
 {
   "name": "my-project",
   "version": "1.0.0",
-  "description": "",
+  "description": "Should always check if the planet will be hit",
   "main": "index.js",
   "scripts": {
     "dev": "parcel serve src/index.html",
